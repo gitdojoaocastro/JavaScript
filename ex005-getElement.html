@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(207, 242, 247);
+            color: darkcyan;
+            font-size: 20pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>D-O-M</h1>
+    <h2>DIV h2</h2>
+    <p>Aqui vai o resultado</p>
+    <p>Aqui em <strong>negrito</strong></p>
+    <div class="msg">Aqui tem uma div</div>
+    <script>
+
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var d = window.document.getElementById('msg')
+        p1.style.background='green'
+        d.style.color='white'
+        d.innerText = 'Estou aguardando...'
+        /*
+        var d = window.document.querySelector('div.msg')
+        d.style.color = 'black'
+        */
+    </script>
+</body>
+</html>
